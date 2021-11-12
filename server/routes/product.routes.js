@@ -3,7 +3,7 @@ const ProductController = require("../controllers/product.controller")
 module.exports = app => {
     app.post("/api/products/create", ProductController.createProduct);
 
-    app.get("/api/ninjas/random", ProductController.findRandomProduct);
+    app.get("/api/products/random", ProductController.findRandomProduct);
 
     app.get("/api/products/:_id", ProductController.findOneProduct);
 
